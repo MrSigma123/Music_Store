@@ -9,8 +9,6 @@ body {
   filter: brightness(0.98) contrast(1.15);
 }
 
-
-
 .menu-container {
   background: #f1e7d0;
   max-width: 70rem;
@@ -35,7 +33,7 @@ ul {
   padding: 0;
 }
 
-li {
+section li {
   display: flex;
   align-items: flex-start;
   gap: 1rem;
@@ -45,7 +43,7 @@ li {
   transition: background-color 0.2s ease-in-out;
 }
 
-li:hover {
+section li:hover {
   background-color: #ece1c9;
 }
 
