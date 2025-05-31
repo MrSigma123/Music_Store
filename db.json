@@ -72,6 +72,14 @@
     "alt": "instrument klawiszowy keyboard ale fajniejszy",
     "kategoria":"Klawiszowe"
   },
+     {
+    "title": "Złota Trąbka",
+    "price": "2320 zł",
+    "description": "Błyszcząca i brzmiąca!",
+    "image": "grafiki/trabka.jpg",
+    "alt": "instrument dęty trąbka",
+    "kategoria":"Dete"
+  },
   {
     "title": "Harpejji",
     "price": "42 350 zł",
@@ -104,6 +112,14 @@
     "alt": "Mandolina kuchenna Samuraj (narzędzie kuchenne)",
     "kategoria":"inne"
   },
+     {
+    "title": "Róg Francuski",
+    "price": "3450.69 zł",
+    "description": "W końcu możesz się nazwać fancuskim artystą!",
+    "image": "grafiki/rogFrancuski.jpg",
+    "alt": "instrument dęty róg francuski",
+    "kategoria":"Dete"
+  },
   {
     "title": "Legendarne Złote Banjo",
     "price": "55 zł",
@@ -125,8 +141,24 @@
     "price": "850.69 zł",
     "description": "Przystojniak w pakiecie...",
     "image": "grafiki/sax1.webp",
-    "alt": "instrument saksofon",
+    "alt": "instrument dęty saksofon",
     "kategoria":"Dete"
+  },
+   {
+    "title": "Spooky Trumpet",
+    "price": "1982.87 zł",
+    "description": "Doot Doot...",
+    "image": "grafiki/dootdoot.jpg",
+    "alt": "instrument dęty trąbka ale straszna",
+    "kategoria":"Dete"
+  },
+   {
+    "title": "Rogal Francuski",
+    "price": "20.50 zł",
+    "description": "Być może chodziło ci o Róg Francuski, ale skoro już na to trafiłeś, to równie dobrze możesz się najeść!",
+    "image": "grafiki/rogalFrancuski.JPG",
+    "alt": "bułeczka rogal francuski",
+    "kategoria":"inne"
   }
 ]
 }
