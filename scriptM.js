@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const button = document.querySelector('.btn');
   const menu = document.getElementById('menu');
 
-  // Toggle menu on button click
+  // toggle
   button.addEventListener('click', function (event) {
     event.stopPropagation();
     if (menu.style.display === 'block') {
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // Hide menu when clicking outside
+  // ukryj
   document.addEventListener('click', function (event) {
     if (!menu.contains(event.target) && !button.contains(event.target)) {
       menu.style.display = 'none';
