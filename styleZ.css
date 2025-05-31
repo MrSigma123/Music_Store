@@ -11,7 +11,7 @@ body {
 
 .menu-container {
   background: #f1e7d0;
-  max-width: 70rem;
+  max-width: 70%;
   margin: auto;
   padding: 2rem;
   border-radius: 1rem;
@@ -38,7 +38,7 @@ section li {
   align-items: flex-start;
   gap: 1rem;
   padding: 1.5rem 0;
-  border-bottom: 1px solid #d8c4a1;
+  border-bottom: 1px solid #c5b291;
   border-radius: 6px;
   transition: background-color 0.2s ease-in-out;
 }
@@ -93,5 +93,25 @@ section li:hover {
 
 .item-image:hover{
   transform: scale(150%);
-  transition-duration:0.5s;
+  transition-duration: 0.5s;
+}
+
+#search{
+  margin:auto;
+  border-radius: 0.1rem;
+  border-color:crimson;
+  transition-duration: 0.5s;
+  position:absolute;
+  margin-bottom: 1rem;
+  left:47.5%;
+}
+
+#search:focus{
+  outline:none !important;
+  margin:auto;
+  border-width: 0.4rem;
+  border-radius: 0.3rem;
+  border-color:crimson;
+  transform: scale(110%);
+  transition-duration: 1s;
 }

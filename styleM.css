@@ -1,3 +1,19 @@
+header{
+    margin:auto;
+}
+
+header>a>img{
+    width:10%;
+    height: auto;
+    transition-duration: 1s;
+}
+
+header>a>img:hover{
+    transform:rotate(1080deg);
+    transition: transform 2s ease-in;
+
+}
+
 nav {
       border: 1px solid brown;
       border-radius: 0.2rem;
