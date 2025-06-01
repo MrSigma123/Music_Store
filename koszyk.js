@@ -35,7 +35,7 @@ function renderCart(){
 
     });
 
-    totalPrice.textContent = `Suma: ${sum.toFixed(2)} zł`;
+    totalPrice.innerHTML = `<span class='suma'> Suma: ${sum.toFixed(2)} zł</span>`;
 }
 
 renderCart();

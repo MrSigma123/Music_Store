@@ -170,6 +170,27 @@ section li:hover {
   transition-duration: 0.5s;
 }
 
-.powrot{
-  
+#cartList{
+  max-height: 30rem;
+  overflow-y: auto;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#cartList>li:nth-child(even){
+  background-color: #eedaba;
+}
+
+#cartList>li:nth-child(even):hover{
+  background-color: #e6cca4;
+}
+
+#cartList>li:nth-child(odd):hover{
+  background-color: #e2d0b5;
+}
+
+.suma{
+  font-size: 2rem;
+  font-weight: bold;
 }
