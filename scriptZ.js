@@ -43,7 +43,7 @@ function renderItems(filteredItems) {
           <span class="itemTitle">${item.title}</span>
           <span class="itemPrice">${item.price}</span>
         </div>
-        <div class="itemDescription">${item.description}</div>
+        <span class="itemDescription">${item.description}</span>
 
         <div class="koszykContainer">
           <button class="doKoszyka">Dodaj do koszyka</button>
@@ -59,7 +59,8 @@ function renderItems(filteredItems) {
       const cart = JSON.parse(sessionStorage.getItem('cart')) || [];
       cart.push({
         title: item.title,
-        price: item.price
+        price: item.price,
+        img: item.image
       });
       sessionStorage.setItem('cart', JSON.stringify(cart));
 

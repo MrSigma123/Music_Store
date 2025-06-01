@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const button = document.querySelector('.btn');
+  const button = document.querySelector('.btnDropdown');
   const menu = document.getElementById('menu');
 
 

@@ -127,6 +127,11 @@ section li:hover {
   font-size: 0.9rem;
 }
 
+.doKoszyka:hover{
+  background-color: #e7bc92 ;
+}
+
+
 .koszykContainer{
   display: flex;
   flex-direction: column;
@@ -149,3 +154,22 @@ section li:hover {
   visibility: visible;
 }
 
+.cartImage{
+  width: 100px;
+  height: auto;
+  border-radius: 0.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  flex-shrink: 0;
+  transition: 0.3s;
+}
+
+.cartImage:hover{
+  transform: scale(150%);
+  transition-duration: 0.5s;
+}
+
+.powrot{
+  
+}
