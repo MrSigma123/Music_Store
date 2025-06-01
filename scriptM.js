@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const button = document.querySelector('.btn');
   const menu = document.getElementById('menu');
 
+
   // toggle
   button.addEventListener('click', function (event) {
     event.stopPropagation();
@@ -19,4 +20,3 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
-

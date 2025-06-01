@@ -7,19 +7,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styleZ.css">
   <link rel="stylesheet" href="styleM.css">
-
+ 
 </head>
 <body>
   <header>
     <a href="index.html"><img src="grafiki/logomuzyczne.png"></a>
+
   </header>
+
   <nav>
     <ul>
       <li><a href="index.html">Strona główna</a></li>
       <li><a href="#">Kontakt</a></li>
       <li>
-        <button class="btn dropdown">
-          Zakupy
+        <button class="btn dropdown">Zakupy</button>
           <div id="menu" class="listCatg">
             <a href="zakupy1.html">Wszystkie</a>
             <a href="zakupy1.html" data-kategoria="Gitary">Gitary</a>
@@ -27,16 +28,16 @@
             <a href="zakupy1.html" data-kategoria="Smyczkowe">Smyczkowe</a>
             <a href="zakupy1.html" data-kategoria="inne">inne</a>
           </div>
-        </button>
+
       </li>
     </ul>
   </nav>
 
-  
-  <section class="menu-container">
+  <section class="menuContainer">
     <input type="text" id="search" placeholder="Szukaj produktu..." />
+    <button id="koszyk">Koszyk (0)</button>
     <h1>Niezwykłe instrumenty</h1>
-    <ul id="item-list"></ul>  
+    <ul id="itemList"></ul>  
   </section>
     <script src="scriptZ.js"></script>
     <script src="scriptM.js"></script>
