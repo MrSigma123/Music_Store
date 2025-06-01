@@ -1,0 +1,22 @@
+body {
+  background-image: url(grafiki/wooden-wall4.jpg);
+  background-repeat: repeat;
+  background-position: top left;
+  font-family: 'Playfair Display', serif;
+  color: #3e2b1c;
+  margin: 0;
+  padding: 2rem;
+  filter: brightness(0.98) contrast(1.15);
+}
+
+.doKoszyka{
+  background-color: #d4a373;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: 1px solid #af865c;
+}

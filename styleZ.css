@@ -104,7 +104,8 @@ section li:hover {
   transition-duration: 0.5s;
   position:absolute;
   margin-bottom: 1rem;
-  left:47.5%;
+  left:45.5%;
+  padding: 0.3rem 0.4rem;
 }
 
 #search:focus{
@@ -124,7 +125,9 @@ section li:hover {
   padding: 0.4rem 0.8rem;
   cursor: pointer;
   border-radius: 0.3rem;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+    border: 1px solid #af865c;
 }
 
 .doKoszyka:hover{
@@ -142,8 +145,9 @@ section li:hover {
 }
 
 .addedMsg {
-  font-size: 0.85rem;
-  color: green;
+  font-size: 1.05rem;
+  font-weight: bold;
+  color: rgb(0, 104, 0);
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s ease, visibility 0.5s ease;
@@ -193,4 +197,37 @@ section li:hover {
 .suma{
   font-size: 2rem;
   font-weight: bold;
+}
+
+#podsumowanie{
+  background-color: #a26741;
+  color: white;
+  right:2rem;
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  position: absolute;
+  transition-duration: 0.15s;
+}
+
+#podsumowanie:hover{
+  background-color: #6d472d;
+  transition:0.3s;
+}
+
+.usunBtn{
+  background-color: rgba(255, 0, 0, 0.596);
+  padding: 0.3rem 0.5rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.usunBtn:hover{
+  background-color: rgb(255, 0, 0);;
 }
