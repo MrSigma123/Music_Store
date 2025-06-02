@@ -12,22 +12,101 @@
         <h1>Muzyczny Świat</h1>
         <p>Twój sklep z instrumentami muzycznymi</p>
     </header>
+    
+    <div class="container">
+        <form action="/action_page.php">
+            <div class="row">
+                <div class="col-25">
+                    <label for="imie">Imie</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="imie" name="imie" placeholder="Twa godność..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="nazwisko">Nazwisko</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="nazwisko" name="nazwisko" placeholder="Pański ród..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="email">email</label>
+                </div>
+                <div class="col-75">
+                    <input type="email" id="mail" name="mail" placeholder="wymagane..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="panstwo">Kraj pochodzenia</label>
+                </div>
+                <div class="col-75">
+                    <select id="kraj" name="Kraj">
+                        <option value="polska">Polska</option>
+                        <option value="usa">USA</option>
+                        <option value="uk">UK</option>
+                        <option value="niemcy">Niemcy</option>
+                        <option value="inne">Inne</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">Komunikat</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Napisz coś, śmiało.." style="height:200px"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Wyślij">
+            </div>
+        </form>
+    </div>
     <button class="open-button" onclick="openForm()">
-        Skontaktuj Się
+       Oceń produkt
     </button>
     <div class="form-popup" id="myForm">
-        <form action="/action_page.php" class="form-container">
-            <label for="name">Imię/Nazwisko</label>
-            <input type="text" id="name" name="name" required />
-            <br>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
-            <br>
-            <label for="message">Wiadomość</label><br/>
-            <textarea id="message" name="message" required></textarea>
-            <br>
-            <button type="submit" class="btn">Wyślij Wiadomość</button>
-            <button type="button" class="btn cancel" onclick="closeForm()">Zamknij</button>
+        <form action="/action_page.php">
+            <div class="row">
+                <div class="col-25">
+                    <label for="produkt">Produkt</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="pname" name="produkt" placeholder="Jaki produkt oceniasz..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">Ocena</label>
+                </div>
+                <div class="col-75">
+                    <select id="ocena" name="Ocena">
+                        <option value="beznadziejna">1</option>
+                        <option value="slaba">2</option>
+                        <option value="dostateczna">3</option>
+                        <option value="dobra">4</option>
+                        <option value="wysmienita">5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">Wyjasnienie</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Pomóż nam zrozumieć twoją opinię.." style="height:200px"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Wyślij">
+            </div>
+            <div class="row">
+                <button type="button" class="close-button" onclick="closeForm()">Zamknij</button>
+            </div>
         </form>
     </div>
     <footer>

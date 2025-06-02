@@ -1,66 +1,80 @@
-﻿{
-    box-sizing: border-box;
-}
-.open-button {
-    background-color: slategrey;
+﻿
+    .open-button {
+        background-color: slategrey;
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        opacity: 0.8;
+        position: fixed;
+        bottom: 23px;
+        right: 28px;
+        width: 280px;
+    }
+.close-button {
+    background-color: indianred;
     color: white;
-    padding: 16px 20px;
+    padding: 12px 20px;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
-    opacity: 0.8;
-    position: fixed;
-    bottom: 23px;
-    right: 28px;
-    width: 280px;
+    float: right;
 }
-
 .form-popup {
     display: none;
     position: center;
     border: 3px solid #f1f1f1;
     z-index: 9;
+    background-color: ghostwhite;
+}
+   
+
+input[type=text], input[type=email], select, textarea {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
 }
 
-.form-container {
-    max-width: 80%;
-    padding: 10px;
-    background-color: lightgray;
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
 }
-    .form-container input[type=text], .form-container input[type=email] {
-        width: 30%;
-        padding: 15px;
-        margin: 5px 0 22px 0;
-        border: none;
-        background: #f1f1f1;
+
+input[type=submit] {
+    background-color: green;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+    input[type=submit]:hover {
+        background-color: forestgreen;
     }
 
-        .form-container input[type=text]:focus, .form-container input[type=password]:focus {
-            background-color: #ddd;
-            outline: none;
-        }
-    .form-container textarea[id="message"] {
-        width: 50%;
-        height: 100px;
-        padding: 15px;
-        margin: 5px 0 22px 0;
-        border: none;
-        background: #f1f1f1;
-    }
-    .form-container .btn {
-        background-color: green;
-        color: white;
-        padding: 16px 20px;
-        border: none;
-        cursor: pointer;
-        width: 100%;
-        margin-bottom: 10px;
-        opacity: 0.8;
-    }
+.container {
+    border-radius: 5px;
+    background-color: beige;
+    padding: 20px;
+}
 
-    .form-container .cancel {
-        background-color: dimgray;
-    }
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
 
-    .form-container .btn:hover, .open-button:hover {
-        opacity: 1;
-    }
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
