@@ -5,13 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Podsumowanie</title>
     <link rel="stylesheet" href="styleM.css">
-    <link rel="stylesheet" href="styleP.css">
+    <link rel="stylesheet" href="styleZ.css">
 </head>
 <body>
     <header>
         <a href="index.html"><img src="grafiki/logomuzyczne.png"></a>
-        <button onclick="window.location.href='koszyk.html'" class="doKoszyka">Wróc do koszyka...</button>
+        
     </header>
     
+    <section class="menuContainer">
+        <button onclick="window.location.href='koszyk.html'" class="doKoszyka">Wróc do koszyka...</button>
+        <h1>Podsumowanie zamówienia</h1>
+        <form id="orderForm">
+            <label>Imię: <input type="text" name="name" required></label><br>
+            <label>Nazwisko: <input type="text" name="surname" required></label><br>
+            <label>Email: <input type="email" name="email" required></label><br>
+            <label>Telefon: <input type="tel" name="phone" pattern="[0-9\-\+]{9,15}"></label><br>
+            <label>Adres: <input type="address" name="address" required></label><br>
+            <button type="submit" class="doKoszyka">Złóż zamówienie</button>
+        </form>
+    </section>
+
+    <p id="formMsg"></p>
+
+    <script src="pods.js"></script>
+
 </body>
 </html>

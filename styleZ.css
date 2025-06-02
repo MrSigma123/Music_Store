@@ -211,6 +211,7 @@ section li:hover {
   margin-bottom: 1.5rem;
   position: absolute;
   transition-duration: 0.15s;
+  font-weight: bold;
 }
 
 #podsumowanie:hover{

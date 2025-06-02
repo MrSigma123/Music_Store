@@ -1,164 +1,195 @@
 {
- "products":[
-  {
-    "title": "Gitara Klasyczna",
-    "price": "1630 zł",
-    "description": "W sam raz dla początkujacych!",
-    "image": "grafiki/gitara2ibanez.jpg",
-    "alt": "instrument strunowy gitara klasyczna",
-    "kategoria":"Gitary"
-  },
-  {
-    "title": "Gitara Dziewczęca",
-    "price": "750 zł",
-    "description": "Bo kto powiedział, że gitary są tylko dla chłopaków?",
-    "image": "grafiki/gitara3roz.jpg",
-    "alt": "instrument strunowy gitara różowa",
-    "kategoria":"Gitary"
-  },
-  {
-    "title": "Epicka Gitara",
-    "price": "2580 zł",
-    "description": "Wyposaż się w niepowtarzalny styl już dziś!",
-    "image": "grafiki/gitara1harley.jpg",
-    "alt": "instrument strunowy gitara harley benton czarna stylowa",
-    "kategoria":"Gitary"
-  },
-  {
-    "title": "Zepsuta Gitara",
-    "price": "10 zł",
-    "description": "Nadaje się idealnie do naprawy!",
-    "image": "grafiki/zepsutaGitara.jpg",
-    "alt": "zepsuty instrument strunowy gitara z dziurą",
-    "kategoria":"Gitary"
-  },
-  {
-    "title": "Piekielna Gitara",
-    "price": "666.50 zł",
-    "description": "Prosto z czeluści piekieł!",
-    "image": "grafiki/piekielnaGitara.webp",
-    "alt": "zepsuty instrument strunowy gitara z dziurą",
-    "kategoria":"Gitary"
-  },
-  {
-    "title": "Avocadolina",
-    "price": "550 zł",
-    "description": "Tylko u nas! Niezwykła i niespotykana, jedyna w swoim rodzaju, Mandolina-Avocado!",
-    "image": "grafiki/avocadolina.png",
-    "alt": "instrument strunowy mandolina w stylu avocado",
-    "kategoria":"Gitary"
-  },
-  {
-    "title": "Złowieszcze Skrzypce",
-    "price": "326.66 zł",
-    "description": "Złe do samych kości! <br> Aż strach się bać!",
-    "image": "grafiki/skrzypceZlowieszcze.webp",
-    "alt": "Skrzypce z namalowaną ogromną czaszką",
-    "kategoria":"Smyczkowe"
-  },
-  {
-    "title": "Keyboard",
-    "price": "280 zł",
-    "description": "W zestawie ze stojakiem!",
-    "image": "grafiki/keyboard.jpg",
-    "alt": "instrument klawiszowy keyboard",
-    "kategoria":"Klawiszowe"
-  },
-  {
-    "title": "Super Keyboard",
-    "price": "980 zł",
-    "description": "Tłumy się same zbierają!",
-    "image": "grafiki/keyboard1.jpg",
-    "alt": "instrument klawiszowy keyboard ale fajniejszy",
-    "kategoria":"Klawiszowe"
-  },
-     {
-    "title": "Złota Trąbka",
-    "price": "2320 zł",
-    "description": "Błyszcząca i brzmiąca!",
-    "image": "grafiki/trabka.jpg",
-    "alt": "instrument dęty trąbka",
-    "kategoria":"Dete"
-  },
-  {
-    "title": "Harpejji",
-    "price": "42 350 zł",
-    "description": "Bo kto bogatemu zabroni?",
-    "image": "grafiki/harpejji.jpg",
-    "alt": "instrument strunowy Harpejji",
-    "kategoria":"inne"
-  },
-  {
-    "title": "Organy Piszczałkowe",
-    "price": "23 350 zł",
-    "description": "Kompaktowe i głośne, w sam raz do zostania znienawidzonym przez sąsiadów!",
-    "image": "grafiki/reedOrgan.webp",
-    "alt": "instrument klawiszowy organy piszczałkowe",
-    "kategoria":"Klawiszowe"
-  },
-  {
-    "title": "Organy Kościelne",
-    "price": "1 323 562.99 zł",
-    "description": "Z witrażem w zestawie! TotalNIE Gratis!",
-    "image": "grafiki/organyWitraz.jpg",
-    "alt": "instrument klawiszowy organy piszczałkowe",
-    "kategoria":"Klawiszowe"
-  },
-  {
-    "title": "Japońska Mandolina Samuraj",
-    "price": "84 zł",
-    "description": "Nie to, czego byś się spodziewał po nazwie!",
-    "image": "grafiki/japonskaMandolina.jpg",
-    "alt": "Mandolina kuchenna Samuraj (narzędzie kuchenne)",
-    "kategoria":"inne"
-  },
-     {
-    "title": "Róg Francuski",
-    "price": "3450.69 zł",
-    "description": "W końcu możesz się nazwać fancuskim artystą!",
-    "image": "grafiki/rogFrancuski.jpg",
-    "alt": "instrument dęty róg francuski",
-    "kategoria":"Dete"
-  },
-  {
-    "title": "Legendarne Złote Banjo",
-    "price": "55 zł",
-    "description": "Bardzo przyjemne i stylowe!",
-    "image": "grafiki/banjo1.jpg",
-    "alt": "instrument gitara banjo",
-    "kategoria":"Gitara"
-  },
+  "products": [
     {
-    "title": "Gitara Hello Kitty",
-    "price": "4855 zł",
-    "description": "Nieskończony boost punktów do aury!",
-    "image": "grafiki/gitaraHelloKitty.png",
-    "alt": "różowa gitara z motywem Hello Kitty",
-    "kategoria":"Gitara"
-  },
+      "title": "Gitara Klasyczna",
+      "price": "1630 zł",
+      "description": "W sam raz dla początkujacych!",
+      "image": "grafiki/gitara2ibanez.jpg",
+      "alt": "instrument strunowy gitara klasyczna",
+      "kategoria": "Gitary"
+    },
     {
-    "title": "Sexy Saxophone",
-    "price": "850.69 zł",
-    "description": "Przystojniak w pakiecie...",
-    "image": "grafiki/sax1.webp",
-    "alt": "instrument dęty saksofon",
-    "kategoria":"Dete"
-  },
-   {
-    "title": "Spooky Trumpet",
-    "price": "1982.87 zł",
-    "description": "Doot Doot...",
-    "image": "grafiki/dootdoot.jpg",
-    "alt": "instrument dęty trąbka ale straszna",
-    "kategoria":"Dete"
-  },
-   {
-    "title": "Rogal Francuski",
-    "price": "20.50 zł",
-    "description": "Być może chodziło ci o Róg Francuski, ale skoro już na to trafiłeś, to równie dobrze możesz się najeść!",
-    "image": "grafiki/rogalFrancuski.JPG",
-    "alt": "bułeczka rogal francuski",
-    "kategoria":"inne"
-  }
-]
+      "title": "Gitara Dziewczęca",
+      "price": "750 zł",
+      "description": "Bo kto powiedział, że gitary są tylko dla chłopaków?",
+      "image": "grafiki/gitara3roz.jpg",
+      "alt": "instrument strunowy gitara różowa",
+      "kategoria": "Gitary"
+    },
+    {
+      "title": "Epicka Gitara",
+      "price": "2580 zł",
+      "description": "Wyposaż się w niepowtarzalny styl już dziś!",
+      "image": "grafiki/gitara1harley.jpg",
+      "alt": "instrument strunowy gitara harley benton czarna stylowa",
+      "kategoria": "Gitary"
+    },
+    {
+      "title": "Zepsuta Gitara",
+      "price": "10 zł",
+      "description": "Nadaje się idealnie do naprawy!",
+      "image": "grafiki/zepsutaGitara.jpg",
+      "alt": "zepsuty instrument strunowy gitara z dziurą",
+      "kategoria": "Gitary"
+    },
+    {
+      "title": "Piekielna Gitara",
+      "price": "666.50 zł",
+      "description": "Prosto z czeluści piekieł!",
+      "image": "grafiki/piekielnaGitara.webp",
+      "alt": "zepsuty instrument strunowy gitara z dziurą",
+      "kategoria": "Gitary"
+    },
+    {
+      "title": "Avocadolina",
+      "price": "550 zł",
+      "description": "Tylko u nas! Niezwykła i niespotykana, jedyna w swoim rodzaju, Mandolina-Avocado!",
+      "image": "grafiki/avocadolina.png",
+      "alt": "instrument strunowy mandolina w stylu avocado",
+      "kategoria": "Gitary"
+    },
+    {
+      "title": "Złowieszcze Skrzypce",
+      "price": "326.66 zł",
+      "description": "Złe do samych kości! <br> Aż strach się bać!",
+      "image": "grafiki/skrzypceZlowieszcze.webp",
+      "alt": "Skrzypce z namalowaną ogromną czaszką",
+      "kategoria": "Smyczkowe"
+    },
+    {
+      "title": "Keyboard",
+      "price": "280 zł",
+      "description": "W zestawie ze stojakiem!",
+      "image": "grafiki/keyboard.jpg",
+      "alt": "instrument klawiszowy keyboard",
+      "kategoria": "Klawiszowe"
+    },
+    {
+      "title": "Super Keyboard",
+      "price": "980 zł",
+      "description": "Tłumy się same zbierają!",
+      "image": "grafiki/keyboard1.jpg",
+      "alt": "instrument klawiszowy keyboard ale fajniejszy",
+      "kategoria": "Klawiszowe"
+    },
+    {
+      "title": "Złota Trąbka",
+      "price": "2320 zł",
+      "description": "Błyszcząca i brzmiąca!",
+      "image": "grafiki/trabka.jpg",
+      "alt": "instrument dęty trąbka",
+      "kategoria": "Dete"
+    },
+    {
+      "title": "Harpejji",
+      "price": "42350 zł",
+      "description": "Bo kto bogatemu zabroni?",
+      "image": "grafiki/harpejji.jpg",
+      "alt": "instrument strunowy Harpejji",
+      "kategoria": "inne"
+    },
+    {
+      "title": "Organy Piszczałkowe",
+      "price": "23350 zł",
+      "description": "Kompaktowe i głośne, w sam raz do zostania znienawidzonym przez sąsiadów!",
+      "image": "grafiki/reedOrgan.webp",
+      "alt": "instrument klawiszowy organy piszczałkowe",
+      "kategoria": "Klawiszowe"
+    },
+    {
+      "title": "Organy Kościelne",
+      "price": "1323562.99 zł",
+      "description": "Z witrażem w zestawie! TotalNIE Gratis!",
+      "image": "grafiki/organyWitraz.jpg",
+      "alt": "instrument klawiszowy organy piszczałkowe",
+      "kategoria": "Klawiszowe"
+    },
+    {
+      "title": "Japońska Mandolina Samuraj",
+      "price": "84 zł",
+      "description": "Nie to, czego byś się spodziewał po nazwie!",
+      "image": "grafiki/japonskaMandolina.jpg",
+      "alt": "Mandolina kuchenna Samuraj (narzędzie kuchenne)",
+      "kategoria": "inne"
+    },
+    {
+      "title": "Róg Francuski",
+      "price": "3450.69 zł",
+      "description": "W końcu możesz się nazwać fancuskim artystą!",
+      "image": "grafiki/rogFrancuski.jpg",
+      "alt": "instrument dęty róg francuski",
+      "kategoria": "Dete"
+    },
+    {
+      "title": "Legendarne Złote Banjo",
+      "price": "55 zł",
+      "description": "Bardzo przyjemne i stylowe!",
+      "image": "grafiki/banjo1.jpg",
+      "alt": "instrument gitara banjo",
+      "kategoria": "Gitara"
+    },
+    {
+      "title": "Gitara Hello Kitty",
+      "price": "4855 zł",
+      "description": "Nieskończony boost punktów do aury!",
+      "image": "grafiki/gitaraHelloKitty.png",
+      "alt": "różowa gitara z motywem Hello Kitty",
+      "kategoria": "Gitara"
+    },
+    {
+      "title": "Shrexy Saxophone",
+      "price": "2850.69 zł",
+      "description": "Przystojniak w pakiecie...",
+      "image": "grafiki/sax1.webp",
+      "alt": "instrument dęty saksofon",
+      "kategoria": "Dete"
+    },
+    {
+      "title": "Spooky Trumpet",
+      "price": "1982.87 zł",
+      "description": "Doot Doot...",
+      "image": "grafiki/dootdoot.jpg",
+      "alt": "instrument dęty trąbka ale straszna",
+      "kategoria": "Dete"
+    },
+    {
+      "title": "Rogal Francuski",
+      "price": "20.50 zł",
+      "description": "Być może chodziło ci o Róg Francuski, ale skoro już na to trafiłeś, to równie dobrze możesz się najeść!",
+      "image": "grafiki/rogalFrancuski.JPG",
+      "alt": "bułeczka rogal francuski",
+      "kategoria": "inne"
+    }
+  ],
+  "orders": [
+    {
+      "id": "17a2",
+      "client": {
+        "name": "aa",
+        "surname": "vvb",
+        "email": "asd@asd.sd",
+        "phone": "",
+        "address": "Poland"
+      },
+      "items": [
+        {
+          "title": "Gitara Klasyczna",
+          "price": "1630 zł"
+        },
+        {
+          "title": "Gitara Dziewczęca",
+          "price": "750 zł"
+        },
+        {
+          "title": "Gitara Dziewczęca",
+          "price": "750 zł"
+        },
+        {
+          "title": "Gitara Dziewczęca",
+          "price": "750 zł"
+        }
+      ],
+      "total": "3880.00"
+    }
+  ]
 }
