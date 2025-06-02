@@ -21,6 +21,8 @@ body {
   border: 1px solid #d6c1a7;
   transition: background-color 0.3s ease;
   animation: fadeIn 1.2s ease-in-out;
+  margin-top: 0.5rem;
+  z-index: 1;
 }
 
 @keyframes fadeIn {

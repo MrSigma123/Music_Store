@@ -22,6 +22,7 @@ body {
 
 /* Nagłówek */
 header {
+  opacity: 0.95;
   background-color: #333;
   color: white;
   padding: 30px 10px;
@@ -41,6 +42,7 @@ header {
 
 /* Nawigacja */
 nav {
+  opacity: 0.95;
   background-color: #555;
   display: flex;
   justify-content: center;
@@ -78,11 +80,13 @@ nav a:hover::after {
 
 .dropdown {
   position: relative;
+  z-index: 10;
   display: flex;
   align-items: center;
 }
 
 .dropDownMenu {
+  z-index: 20;
   display: none;
   position: absolute;
   top: 100%;
@@ -193,6 +197,7 @@ nav a:hover::after {
 
 /* Stopka */
 footer {
+  opacity: 0.85;
   background-color: #333;
   color: white;
   text-align: center;
@@ -249,4 +254,9 @@ footer {
 
 .header-text {
   text-align: center;
+}
+
+.thanks{
+  text-align: center;
+  font-size: 3rem;
 }

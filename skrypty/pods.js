@@ -40,8 +40,12 @@ form.addEventListener('submit', async (e)=>{
             });
             
             if(res.ok){
+                const savedOrder = await res.json(); // <- pobierz zamówienie z ID
+                const orderId = savedOrder.id;
+
+                sessionStorage.setItem("lastOrderId", orderId); // <- zapisz ID do sessionStorage
+
                 alert("Zamówienie zostało złożone!");
-                sessionStorage.clear();
                 window.location.href="dzieki.html";
             } else {
                 alert("Wystąpił błąd przy składaniu zamówienia, upewnij się, że wszystkie podane dane są poprawne i spróbuj ponownie.");

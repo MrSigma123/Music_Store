@@ -159,6 +159,30 @@
       "image": "grafiki/rogalFrancuski.JPG",
       "alt": "bułeczka rogal francuski",
       "kategoria": "inne"
+    },
+    {
+      "title": "Gitara Epiphone",
+      "price": "799.00 zł",
+      "description": "Potężny akustyk światowej klasy!",
+      "image": "grafiki/gitara.jpg",
+      "alt": "instrument gitara epiphone",
+      "kategoria": "Gitary"
+    },
+    {
+      "title": "Pianino cyfrowe Yamaha P-145B",
+      "price": "1629.00 zł",
+      "description": "Zamienia Twój dom w salę koncertową!",
+      "image": "grafiki/pianino.jpg",
+      "alt": "instrument pianino",
+      "kategoria": "Klawiszowe"
+    },
+    {
+      "title": "Perkusja",
+      "price": "2999.00 zł",
+      "description": "Kolejny najlepszy sposób na zostanie znienawidzonym przez sąsiadów!",
+      "image": "grafiki/perkusja.jpg",
+      "alt": "instrument perkusja",
+      "kategoria": "Bebny"
     }
   ],
   "orders": [
@@ -232,6 +256,175 @@
         }
       ],
       "total": "1630.00"
+    },
+    {
+      "id": "3e24",
+      "client": {
+        "name": "proba1",
+        "surname": "1",
+        "email": "1@1.1",
+        "phone": "",
+        "address": "1"
+      },
+      "items": [
+        {
+          "title": "Gitara Dziewczęca",
+          "price": "750 zł"
+        },
+        {
+          "title": "Gitara Dziewczęca",
+          "price": "750 zł"
+        },
+        {
+          "title": "Epicka Gitara",
+          "price": "2580 zł"
+        },
+        {
+          "title": "Gitara Klasyczna",
+          "price": "1630 zł"
+        },
+        {
+          "title": "Avocadolina",
+          "price": "550 zł"
+        }
+      ],
+      "total": "6260.00"
+    },
+    {
+      "id": "fa87",
+      "client": {
+        "name": "asd",
+        "surname": "asd",
+        "email": "dsa@dasd.asd",
+        "phone": "",
+        "address": "aaaaa"
+      },
+      "items": [
+        {
+          "title": "Gitara Klasyczna",
+          "price": "1630 zł"
+        },
+        {
+          "title": "Gitara Klasyczna",
+          "price": "1630 zł"
+        },
+        {
+          "title": "Gitara Klasyczna",
+          "price": "1630 zł"
+        },
+        {
+          "title": "Gitara Klasyczna",
+          "price": "1630 zł"
+        }
+      ],
+      "total": "6520.00"
+    },
+    {
+      "id": "829e",
+      "client": {
+        "name": "Stefan",
+        "surname": "Bobrowski",
+        "email": "stefanb@mail.com",
+        "phone": "",
+        "address": "bezdomny"
+      },
+      "items": [
+        {
+          "title": "Gitara Dziewczęca",
+          "price": "750 zł"
+        },
+        {
+          "title": "Gitara Dziewczęca",
+          "price": "750 zł"
+        },
+        {
+          "title": "Gitara Klasyczna",
+          "price": "1630 zł"
+        }
+      ],
+      "total": "3130.00"
+    },
+    {
+      "id": "84dc",
+      "client": {
+        "name": "gitaromistrz",
+        "surname": "jaja",
+        "email": "aaa@sd.com",
+        "phone": "",
+        "address": "Tak"
+      },
+      "items": [
+        {
+          "title": "Gitara Klasyczna",
+          "price": "1630 zł"
+        },
+        {
+          "title": "Gitara Klasyczna",
+          "price": "1630 zł"
+        }
+      ],
+      "total": "3260.00"
+    },
+    {
+      "id": "af4a",
+      "client": {
+        "name": "Stefan",
+        "surname": "Zielony",
+        "email": "mail@mail.mail",
+        "phone": "",
+        "address": "bezdomny"
+      },
+      "items": [
+        {
+          "title": "Epicka Gitara",
+          "price": "2580 zł"
+        },
+        {
+          "title": "Zepsuta Gitara",
+          "price": "10 zł"
+        },
+        {
+          "title": "Avocadolina",
+          "price": "550 zł"
+        },
+        {
+          "title": "Złota Trąbka",
+          "price": "2320 zł"
+        },
+        {
+          "title": "Japońska Mandolina Samuraj",
+          "price": "84 zł"
+        },
+        {
+          "title": "Epicka Gitara",
+          "price": "2580 zł"
+        },
+        {
+          "title": "Epicka Gitara",
+          "price": "2580 zł"
+        },
+        {
+          "title": "Epicka Gitara",
+          "price": "2580 zł"
+        },
+        {
+          "title": "Epicka Gitara",
+          "price": "2580 zł"
+        },
+        {
+          "title": "Epicka Gitara",
+          "price": "2580 zł"
+        },
+        {
+          "title": "Epicka Gitara",
+          "price": "2580 zł"
+        },
+        {
+          "title": "Epicka Gitara",
+          "price": "2580 zł"
+        }
+      ],
+      "total": "23604.00"
     }
   ]
 }
