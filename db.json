@@ -497,6 +497,14 @@
       "email": "dsa@asd.asd",
       "kraj": "polska",
       "wiadomosc": "bajo jajo"
+    },
+    {
+      "id": "9098",
+      "imie": "gg",
+      "nazwisko": "aa",
+      "email": "",
+      "kraj": "polska",
+      "wiadomosc": "bajo jajo bajo jajo"
     }
   ],
   "opinions": [
@@ -505,6 +513,12 @@
       "produkt": "bajo jajo",
       "ocena": "beznadziejna",
       "wyjasnienie": "glupie"
+    },
+    {
+      "id": "3374",
+      "produkt": "klawisze",
+      "ocena": "wysmienita",
+      "wyjasnienie": "Super genialne!"
     }
   ]
 }
