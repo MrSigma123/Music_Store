@@ -8,30 +8,30 @@
   </head>
   <body>
     <header class="header-content">
-
-        <a href="index.html"><img src="grafiki/logomuzyczne.png" id="logo" alt="Logo"></a>
-        <span class="header-text">
-          <h1>Muzyczny Świat</h1>
-          <p>Twój sklep z instrumentami muzycznymi</p>
-        </span>
-
+      <a href="index.html"
+        ><img src="grafiki/logomuzyczne.png" id="logo" alt="Logo"
+      /></a>
+      <span class="header-text">
+        <h1>Muzyczny Świat</h1>
+        <p>Twój sklep z instrumentami muzycznymi</p>
+      </span>
     </header>
 
-<nav>
-  <a href="index.html">Strona główna</a>
-  <div class="dropdown">
-    <a href="#" class="dropdownToggle">Zakupy</a>
-    <div class="dropDownMenu">
-      <a href="zakupy1.html?kategoria=">Wszystko</a>
-      <a href="zakupy1.html?kategoria=Gitary">Gitary</a>
-      <a href="zakupy1.html?kategoria=Smyczkowe">Smyczkowe</a>
-      <a href="zakupy1.html?kategoria=Dete">Dęte</a>
-      <a href="zakupy1.html?kategoria=inne">Inne</a>
-    </div>
-  </div>
-  <a href="#">Kontakt</a>
-  <a href="koszyk.html" id="koszyk">Koszyk (0)</a>
-</nav>
+    <nav>
+      <a href="index.html">Strona główna</a>
+      <div class="dropdown">
+        <a href="#" class="dropdownToggle">Zakupy</a>
+        <div class="dropDownMenu">
+          <a href="zakupy1.html?kategoria=">Wszystko</a>
+          <a href="zakupy1.html?kategoria=Gitary">Gitary</a>
+          <a href="zakupy1.html?kategoria=Smyczkowe">Smyczkowe</a>
+          <a href="zakupy1.html?kategoria=Dete">Dęte</a>
+          <a href="zakupy1.html?kategoria=inne">Inne</a>
+        </div>
+      </div>
+      <a href="#">Kontakt</a>
+      <a href="koszyk.html" id="koszyk">Koszyk (0)</a>
+    </nav>
 
     <div class="container">
       <h2>Polecane produkty</h2>
@@ -72,10 +72,30 @@
     </div>
 
     <footer>
+      <button id="toggle-theme">Tryb nocny</button>
       <p>&copy; 2025 Muzyczny Świat. Wszelkie prawa zastrzeżone.</p>
       <p>Email: kontakt@muzycznyswiat.pl</p>
     </footer>
 
     <script src="skrypty/scriptM.js"></script>
+    <script>
+      const btn = document.getElementById("toggle-theme");
+
+      // domyślnie ustaw "light", jeśli nie ma żadnej klasy
+      if (
+        !document.body.classList.contains("dark") &&
+        !document.body.classList.contains("light")
+      ) {
+        document.body.classList.add("light");
+      }
+
+      btn.addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+        document.body.classList.toggle("light");
+        btn.textContent = document.body.classList.contains("dark")
+          ? "☀️ Tryb jasny"
+          : "🌙 Tryb nocny";
+      });
+    </script>
   </body>
 </html>

@@ -257,26 +257,26 @@ body {
   color: #222;
 }
 
-/* Tryb ciemny – gdy system go wykryje */
-@media (prefers-color-scheme: dark) {
-  body {
-    background: #111;
-    color: #eee;
-  }
-
-  header,
-  footer {
-    background-color: #222;
-    color: #eee;
-  }
-
-  nav {
-    background-color: #333;
-  }
-
-  .container,
-  .product {
-    background-color: #1e1e1e;
-  }
+body.light {
+  background: #f4f4f4;
+  color: #222;
 }
 
+body.dark {
+  background: #111;
+  color: #eee;
+}
+
+body.dark header,
+body.dark footer {
+  background: #222;
+}
+
+body.dark nav {
+  background: #333;
+}
+
+body.dark .container,
+body.dark .product {
+  background: #1e1e1e;
+}
