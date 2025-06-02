@@ -256,7 +256,38 @@ footer {
   text-align: center;
 }
 
+
 .thanks{
   text-align: center;
   font-size: 3rem;
+}
+
+/* Domyślnie jasny motyw (light) */
+body {
+  background: #f4f4f4;
+  color: #222;
+}
+
+body.light {
+  background: #f4f4f4;
+  color: #222;
+}
+
+body.dark {
+  background: #111;
+  color: #eee;
+}
+
+body.dark header,
+body.dark footer {
+  background: #222;
+}
+
+body.dark nav {
+  background: #333;
+}
+
+body.dark .container,
+body.dark .product {
+  background: #1e1e1e;
 }
