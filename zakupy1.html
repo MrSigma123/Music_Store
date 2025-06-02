@@ -6,37 +6,39 @@
   <title>Lista Produktów</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style/styleZ.css">
-  <link rel="stylesheet" href="style/styleM.css">
+  <link rel="stylesheet" href="style/globalcss.css">
  
 </head>
 <body>
-  <header>
-    <a href="index.html"><img src="grafiki/logomuzyczne.png"></a>
+    <header class="header-content">
 
-  </header>
+        <a href="index.html"><img src="grafiki/logomuzyczne.png" id="logo" alt="Logo"></a>
+        <span class="header-text">
+          <h1>Muzyczny Świat</h1>
+          <p>Twój sklep z instrumentami muzycznymi</p>
+        </span>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Strona główna</a></li>
-      <li><a href="#">Kontakt</a></li>
-      <li>
-        <button class="btnDropdown">Zakupy</button>
-          <div id="menu" class="listCatg">
-            <a href="zakupy1.html">Wszystkie</a>
-            <a href="zakupy1.html" data-kategoria="Gitary">Gitary</a>
-            <a href="zakupy1.html" data-kategoria="Dete">Dęte</a>
-            <a href="zakupy1.html" data-kategoria="Smyczkowe">Smyczkowe</a>
-            <a href="zakupy1.html" data-kategoria="inne">inne</a>
-          </div>
+    </header>
 
-      </li>
-    </ul>
-  </nav>
+<nav>
+  <a href="index.html">Strona główna</a>
+  <div class="dropdown">
+    <a href="#" class="dropdownToggle">Zakupy</a>
+    <div class="dropDownMenu">
+      <a href="zakupy1.html?kategoria=">Wszystko</a>
+      <a href="zakupy1.html?kategoria=Gitary">Gitary</a>
+      <a href="zakupy1.html?kategoria=Smyczkowe">Smyczkowe</a>
+      <a href="zakupy1.html?kategoria=Dete">Dęte</a>
+      <a href="zakupy1.html?kategoria=inne">Inne</a>
+    </div>
+  </div>
+  <a href="#">Kontakt</a>
+  <a href="koszyk.html" id="koszyk">Koszyk (0)</a>
+</nav>
 
   <section class="menuContainer">
     <input type="text" id="search" placeholder="Szukaj produktu..." />
-    <button id="koszyk" onclick="window.location.href='koszyk.html'">Koszyk (0)</button>
-    <h1>Niezwykłe instrumenty</h1>
+    <h2>Niezwykłe instrumenty</h2>
     <ul id="itemList"></ul>  
   </section>
     <script src="skrypty/scriptZ.js"></script>

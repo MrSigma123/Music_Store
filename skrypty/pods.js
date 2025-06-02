@@ -51,3 +51,39 @@ form.addEventListener('submit', async (e)=>{
 
     }
 });
+
+function renderSimpleCart() {
+    const cart = JSON.parse(sessionStorage.getItem("cart")) || [];
+    const summary = {};
+
+    let total = 0;
+
+    cart.forEach(item => {
+        const key = item.title;
+        const price = parseFloat(item.price.replace(",", "."));
+        total += isNaN(price) ? 0 : price;
+
+        if (summary[key]) {
+            summary[key].count += 1;
+        } else {
+            summary[key] = { count: 1 };
+        }
+    });
+
+    const list = document.getElementById("simpleCartList");
+    const totalDisplay = document.getElementById("simpleTotal");
+
+    if (list && totalDisplay) {
+        list.innerHTML = "";
+
+        for (const [name, data] of Object.entries(summary)) {
+            const li = document.createElement("li");
+            li.textContent = `${name} × ${data.count}`;
+            list.appendChild(li);
+        }
+
+        totalDisplay.textContent = `${total.toFixed(2)} zł`;
+    }
+}
+
+renderSimpleCart();

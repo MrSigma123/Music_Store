@@ -5,14 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muzykalny koszyk</title>
     <link rel="stylesheet" href="style/styleZ.css">
-    <link rel="stylesheet" href="style/styleM.css">
+    <link rel="stylesheet" href="style/globalcss.css">
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="grafiki/logomuzyczne.png"></a>
+      <div class="header-content">
+        <a href="index.html"><img src="grafiki/logomuzyczne.png" id="logo" alt="Logo"></a>
+        <span class="header-text">
+          <h1>Muzyczny Świat</h1>
+          <p>Twój sklep z instrumentami muzycznymi</p>
+        </span>
+      </div>
     </header>
+    <nav>
+      <a href='zakupy1.html'>Wróc do sklepu...</a>
+      <a href='podsumowanie.html'>Podsumowanie</a>
+    </nav>
+
     <section class="menuContainer">
-        <h1>Twój koszyk</h1> <button onclick="window.location.href='zakupy1.html'" class="doKoszyka" id="powrot">Wróc do sklepu...</button><button onclick="window.location.href='podsumowanie.html'" id="podsumowanie">Podsumowanie</button>
+        <h1>Twój koszyk</h1>
         <ul id="cartList"></ul>
         <p id="total"></p>
     </section>

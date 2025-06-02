@@ -4,31 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Podsumowanie</title>
-    <link rel="stylesheet" href="style/styleM.css">
     <link rel="stylesheet" href="style/styleZ.css">
+    <link rel="stylesheet" href="style/globalcss.css">
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="grafiki/logomuzyczne.png"></a>
-        
+      <div class="header-content">
+        <a href="index.html"><img src="grafiki/logomuzyczne.png" id="logo" alt="Logo"></a>
+        <span class="header-text">
+          <h1>Muzyczny Świat</h1>
+          <p>Twój sklep z instrumentami muzycznymi</p>
+        </span>
+      </div>
     </header>
+    <nav>
+      <a href='koszyk.html'>Wróc do koszyka...</a>
+    </nav>
     
-    <section class="menuContainer">
-        <button onclick="window.location.href='koszyk.html'" class="doKoszyka">Wróc do koszyka...</button>
+    <section class="menuContainer twoColLayout">
+        <div class="leftCol">
         <h1>Podsumowanie zamówienia</h1>
-        <form id="orderForm">
-            <label>Imię: <input type="text" name="name" required></label><br>
-            <label>Nazwisko: <input type="text" name="surname" required></label><br>
-            <label>Email: <input type="email" name="email" required></label><br>
-            <label>Telefon: <input type="tel" name="phone" pattern="[0-9\-\+]{9,15}"></label><br>
-            <label>Adres: <input type="address" name="address" required></label><br>
+        <form id="orderForm">   
+            <div class="formGrid">
+                <label>Imię: <input type="text" name="name" required></label><br>
+                <label>Nazwisko: <input type="text" name="surname" required></label><br>
+                <label>Email: <input type="email" name="email" required></label><br>
+                <label>Telefon: <input type="tel" name="phone" pattern="[0-9\-\+]{9,15}"></label><br>
+                <label>Adres: <input type="address" name="address" required></label><br>
+            </div>
             <button type="submit" class="doKoszyka">Złóż zamówienie</button>
         </form>
+        </div>
+        <div rightCol>
+            <h2>Twój koszyk</h2>
+            <ul id="simpleCartList"></ul>
+            <p class="suma">Suma: <span id="simpleTotal">0 zł</span></p>
+            
+        </div>
     </section>
 
-    <p id="formMsg"></p>
-
     <script src="skrypty/pods.js"></script>
-
 </body>
 </html>

@@ -2,7 +2,6 @@ body {
   background-image: url(../grafiki/wooden-wall4.jpg);
   background-repeat: repeat;
   background-position: top left;
-  font-family: 'Playfair Display', serif;
   color: #3e2b1c;
   margin: 0;
   padding: 2rem;
@@ -18,9 +17,23 @@ body {
   border-radius: 1rem;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   border: 1px solid #d6c1a7;
+  transition: background-color 0.3s ease;
+  animation: fadeIn 1.2s ease-in-out;
 }
 
-h1 {
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+h2 {
   font-size: 2rem;
   border-bottom: 2px solid #c9b28f;
   padding-bottom: 0.5rem;
@@ -231,4 +244,85 @@ section li:hover {
 
 .usunBtn:hover{
   background-color: rgb(255, 0, 0);;
+}
+
+.twoColLayout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.leftCol, .rightCol {
+  flex: 1 1 45%;
+}
+
+.rightCol {
+  background-color: #f8f4eb;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  border: 1px solid #d6c1a7;
+}
+
+#simpleCartList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+
+#simpleCartList li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #c5b291;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 900px) {
+  .twoColumnLayout {
+    flex-direction: column;
+  }
+
+  .leftColumn, .rightColumn {
+    flex: 1 1 100%;
+  }
+}
+
+form {
+  margin-bottom: 2rem;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem 2rem;
+  align-items: center;
+}
+
+.formGrid label {
+  text-align: right;
+  font-weight: 500;
+}
+
+.formGrid input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+button[type="submit"] {
+  display: block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  background-color: #c07746;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #965c36;
 }

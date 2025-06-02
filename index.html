@@ -4,58 +4,78 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Sklep z Instrumentami</title>
-    <link rel="stylesheet" href="style/styleM.css" />
-
+    <link rel="stylesheet" href="style/globalcss.css" />
   </head>
   <body>
-    <header>
-      <h1>Muzyczny Świat</h1>
-      <p>Twój sklep z instrumentami muzycznymi</p>
+    <header class="header-content">
+
+        <a href="index.html"><img src="grafiki/logomuzyczne.png" id="logo" alt="Logo"></a>
+        <span class="header-text">
+          <h1>Muzyczny Świat</h1>
+          <p>Twój sklep z instrumentami muzycznymi</p>
+        </span>
+
     </header>
-  <nav>
-    <ul>
-      <li><a href="index.html">Strona główna</a></li>
-      <li><a href="#">Kontakt</a></li>
-      <li>
-        <button class="btnDropdown">Zakupy</button>
-          <div id="menu" class="listCatg">
-            <a href="zakupy1.html">Wszystkie</a>
-            <a href="zakupy1.html?kategoria=Gitary">Gitary</a>
-            <a href="zakupy1.html?kategoria=Smyczkowe">Smyczkowe</a>
-            <a href="zakupy1.html?kategoria=Dete">Dęte</a>
-            <a href="zakupy1.html?kategoria=inne">Inne</a>
-          </div>
-        
-      </li>
-    </ul>
-  </nav>
-    
-    <script src="skrypty/scriptM.js"></script>
-    
-    <section class="container">
+
+<nav>
+  <a href="index.html">Strona główna</a>
+  <div class="dropdown">
+    <a href="#" class="dropdownToggle">Zakupy</a>
+    <div class="dropDownMenu">
+      <a href="zakupy1.html?kategoria=">Wszystko</a>
+      <a href="zakupy1.html?kategoria=Gitary">Gitary</a>
+      <a href="zakupy1.html?kategoria=Smyczkowe">Smyczkowe</a>
+      <a href="zakupy1.html?kategoria=Dete">Dęte</a>
+      <a href="zakupy1.html?kategoria=inne">Inne</a>
+    </div>
+  </div>
+  <a href="#">Kontakt</a>
+  <a href="koszyk.html" id="koszyk">Koszyk (0)</a>
+</nav>
+
+    <div class="container">
       <h2>Polecane produkty</h2>
-      <section class="product-list">
-        <article class="product">
-          <h3>Gitara akustyczna</h3>
-          <p>Opis gitary akustycznej.</p>
-          <p><strong>899 zł</strong></p>
-        </article>
-        <article class="product">
-          <h3>Pianino cyfrowe</h3>
-          <p>Opis pianina cyfrowego.</p>
-          <p><strong>2199 zł</strong></p>
-        </article>
-        <article class="product">
-          <h3>Zestaw perkusyjny</h3>
-          <p>Opis perkusji.</p>
-          <p><strong>3299 zł</strong></p>
-        </article>
-      </section>
-    </section>
+      <div class="product-list">
+        <div class="product">
+          <h3>Gitara akustyczna Epiphone DR-100</h3>
+          <img src="index/gitara.jpg" alt="Gitara" />
+          <p>
+            Wykonany z wyselekcjonowanego świerku i mahoniu, masz jeden potężny
+            akustyk nasycony światowej klasy jakością Epiphone. Jest
+            wszechstronny, responsywny i zapewnia znajome brzmienie pełne
+            klasycznego uroku.
+          </p>
+          <p><strong>799.00 zł</strong></p>
+        </div>
+        <div class="product">
+          <h3>Pianino cyfrowe Yamaha P-145B</h3>
+          <img src="index/pianino.jpg" alt="Pianino" />
+          <p>
+            Wprowadź do swojego życia magię dźwięku koncertowego fortepianu za
+            sprawą modelu Yamaha P-145. To niezwykłe instrument, który przenosi
+            doświadczenie grania na pełnowymiarowym fortepianie koncertowym
+            prosto do wnętrza Twojego domu.
+          </p>
+          <p><strong>1629.00 zł</strong></p>
+        </div>
+        <div class="product">
+          <h3>Zestaw perkusyjny Pearl Roadshow 22 +Talerze</h3>
+          <img src="index/perkusja.jpg" alt="Perkusja" />
+          <p>
+            Perkusja Pearl Roadshow to w pełni wyposażona i gotowa do gry
+            perkusja, posiadająca w swoim arsenale wszystko to czego potrzebuje
+            perkusista.
+          </p>
+          <p><strong>2999.00 zł</strong></p>
+        </div>
+      </div>
+    </div>
 
     <footer>
       <p>&copy; 2025 Muzyczny Świat. Wszelkie prawa zastrzeżone.</p>
       <p>Email: kontakt@muzycznyswiat.pl</p>
     </footer>
+
+    <script src="skrypty/scriptM.js"></script>
   </body>
 </html>
