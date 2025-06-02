@@ -1,3 +1,5 @@
+/* serce calego sklepu, czyli tworzenie listy przedmiotow do sprzedazy wczytanej z JSON servera, wyszukiwarka, dodawanie itemkow do koszyka, itp */
+
 const searchInput = document.getElementById('search');
 const itemList = document.getElementById('itemList');
 const categoryLinks = document.querySelectorAll('#menu a');

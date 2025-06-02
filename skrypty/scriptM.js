@@ -1,3 +1,5 @@
+/* ten skrypt odpowiada za dropdown menu oraz wypisuje przy koszyku ile jest w nim elementow */
+
 document.addEventListener('DOMContentLoaded', function () {
 const button = document.querySelector('.dropdownToggle');
 const menu = document.querySelector('.dropDownMenu');

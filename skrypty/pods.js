@@ -1,3 +1,5 @@
+/* skrypty uzywane w podsumowaniu, czyli forumlarz-zamularz oraz mini-lista zakupów */
+
 const form = document.getElementById("orderForm");
 
 form.addEventListener('submit', async (e)=>{

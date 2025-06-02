@@ -1,3 +1,5 @@
+/* wnetrze koszyka */
+
 const cartList = document.getElementById("cartList");
 const totalPrice = document.getElementById("total");
 
