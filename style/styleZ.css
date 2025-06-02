@@ -11,7 +11,6 @@ body {
 }
 
 .menuContainer {
-  position: relative;
   background: #f1e7d0;
   max-width: 70%;
   margin: auto;
@@ -119,9 +118,9 @@ section li:hover {
   border-radius: 0.1rem;
   border-color:crimson;
   transition-duration: 0.5s;
-  position:absolute;
+  position:relative;
   margin-bottom: 1rem;
-  left:45.5%;
+  left:80%;
   padding: 0.3rem 0.4rem;
 }
 
@@ -329,4 +328,41 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: #965c36;
+}
+
+body.dark .menuContainer {
+  background-color: rgb(36, 20, 1);
+}
+
+body.dark .itemDescription{
+  color:rgb(230, 230, 230);
+}
+
+body.dark section li:hover {
+  background-color: #3a3831;
+}
+
+body.dark .doKoszyka{
+  background-color: #3e2b1c;
+  color:#ccc
+}
+
+body.dark .doKoszyka:hover{
+  background-color: #4d3524;
+}
+
+body.dark #cartList>li:nth-child(even){
+  background-color: #3f362a;
+}
+
+body.dark #cartList>li:nth-child(odd){
+  background-color: #4e4b43;
+}
+
+body.dark #cartList>li:nth-child(even):hover{
+  background-color: #4b4234;
+}
+
+body.dark #cartList>li:nth-child(odd):hover{
+  background-color: #554c40;
 }

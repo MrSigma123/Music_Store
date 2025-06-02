@@ -40,10 +40,10 @@ form.addEventListener('submit', async (e)=>{
             });
             
             if(res.ok){
-                const savedOrder = await res.json(); // <- pobierz zamówienie z ID
+                const savedOrder = await res.json(); // pobierz zamówienie z ID
                 const orderId = savedOrder.id;
 
-                sessionStorage.setItem("lastOrderId", orderId); // <- zapisz ID do sessionStorage
+                sessionStorage.setItem("lastOrderId", orderId); // zapisz ID do sessionStorage
 
                 alert("Zamówienie zostało złożone!");
                 window.location.href="dzieki.html";

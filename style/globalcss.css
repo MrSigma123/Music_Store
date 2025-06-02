@@ -9,16 +9,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  font-family: "Segoe UI", sans-serif;
-  line-height: 1.6;
-  background-color: #f4f4f4;
-  color: #222;
-  padding: 0 15px;
-  transition:
-    background-color 0.3s ease,
-    color 0.3s ease;
-}
 
 /* Nagłówek */
 header {
@@ -80,13 +70,13 @@ nav a:hover::after {
 
 .dropdown {
   position: relative;
-  z-index: 10;
+  z-index: 1000;
   display: flex;
   align-items: center;
 }
 
 .dropDownMenu {
-  z-index: 20;
+  z-index: 1000;
   display: none;
   position: absolute;
   top: 100%;
@@ -263,9 +253,16 @@ footer {
 }
 
 /* Domyślnie jasny motyw (light) */
+
 body {
-  background: #f4f4f4;
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
   color: #222;
+  padding: 0 15px;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 body.light {
@@ -290,4 +287,15 @@ body.dark nav {
 body.dark .container,
 body.dark .product {
   background: #1e1e1e;
+}
+
+.wracaj{
+  color: rgb(38, 81, 160);
+  text-decoration: none;
+}
+
+body.dark .dropDownMenu {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  border-color: #444;
 }

@@ -19,6 +19,7 @@
 
 <nav>
   <a href="index.html">Strona główna</a>
+  <a href="#">Kontakt</a>  
   <div class="dropdown">
     <a href="#" class="dropdownToggle">Zakupy</a>
     <div class="dropDownMenu">
@@ -30,7 +31,6 @@
       <a href="zakupy1.html?kategoria=inne">Inne</a>
     </div>
   </div>
-  <a href="#">Kontakt</a>
   <a href="koszyk.html" id="koszyk">Koszyk (0)</a>
 </nav>
 
@@ -73,30 +73,11 @@
     </section>
 
     <footer>
-      <button id="toggle-theme">Tryb nocny</button>
+      <button id="toggle-theme">🌙 Tryb nocny</button>
       <p>&copy; 2025 Muzyczny Świat. Wszelkie prawa zastrzeżone.</p>
       <p>Email: kontakt@muzycznyswiat.pl</p>
     </footer>
 
     <script src="skrypty/scriptM.js"></script>
-    <script>
-      const btn = document.getElementById("toggle-theme");
-
-      // domyślnie ustaw "light", jeśli nie ma żadnej klasy
-      if (
-        !document.body.classList.contains("dark") &&
-        !document.body.classList.contains("light")
-      ) {
-        document.body.classList.add("light");
-      }
-
-      btn.addEventListener("click", () => {
-        document.body.classList.toggle("dark");
-        document.body.classList.toggle("light");
-        btn.textContent = document.body.classList.contains("dark")
-          ? "☀️ Tryb jasny"
-          : "🌙 Tryb nocny";
-      });
-    </script>
   </body>
 </html>
