@@ -124,16 +124,6 @@ section li:hover {
   padding: 0.3rem 0.4rem;
 }
 
-#search:focus{
-  outline:none !important;
-  margin:auto;
-  border-width: 0.4rem;
-  border-radius: 0.3rem;
-  border-color:crimson;
-  transform: scale(110%);
-  transition-duration: 1s;
-}
-
 .doKoszyka {
   background-color: #d4a373;
   color: white;

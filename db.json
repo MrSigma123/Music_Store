@@ -488,5 +488,23 @@
       ],
       "total": "8770.00"
     }
+  ],
+  "messages": [
+    {
+      "id": "e2a9",
+      "imie": "aa",
+      "nazwisko": "bb",
+      "email": "dsa@asd.asd",
+      "kraj": "polska",
+      "wiadomosc": "bajo jajo"
+    }
+  ],
+  "opinions": [
+    {
+      "id": "9f24",
+      "produkt": "bajo jajo",
+      "ocena": "beznadziejna",
+      "wyjasnienie": "glupie"
+    }
   ]
 }
