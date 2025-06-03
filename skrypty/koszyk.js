@@ -64,3 +64,16 @@ function renderCart() {
 }
 
 renderCart();
+
+document.addEventListener("DOMContentLoaded", () => {
+    const cart = JSON.parse(sessionStorage.getItem("cart")) || [];
+    const link = document.querySelector("a[href='podsumowanie.html']");
+
+    if (cart.length === 0 && link) {
+        link.addEventListener("click", (e) => {
+            e.preventDefault();
+            alert("Twój koszyk jest pusty. Nie możesz przejść do podsumowania.");
+        });
+        link.classList.add("disabled"); // jeśli chcesz też go wystylować
+    }
+});

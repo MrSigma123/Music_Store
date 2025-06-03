@@ -356,3 +356,62 @@ body.dark #cartList>li:nth-child(even):hover{
 body.dark #cartList>li:nth-child(odd):hover{
   background-color: #554c40;
 }
+
+dialog {
+  border: none;
+  box-shadow: 1px 1px rgb(204, 204, 204);
+  width: 40rem;
+  margin: auto;
+  animation: fadeIn 0.5s ease-in-out;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog>h2{
+  text-align: center;
+}
+
+body.dark dialog{
+  border:none;
+  box-shadow: 1px 1px rgb(204, 204, 204);
+  width:40rem;
+  margin:auto;
+  animation: fadeIn 0.5s ease-in-out;
+  background-color: #333;
+  color:#eee; 
+}
+
+dialog button {
+  padding: 0.6rem 1.2rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#confirmBtn {
+  background-color: #28a745;
+  font-weight: bold;
+  color: white;
+}
+
+#confirmBtn:hover {
+  background-color: #218838;
+}
+
+#cancelBtn {
+  background-color: #dc3545;
+  font-weight: bold;
+  color: white;
+}
+
+#cancelBtn:hover {
+  background-color: #c82333;
+}

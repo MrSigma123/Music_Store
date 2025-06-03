@@ -9,46 +9,56 @@
 </head>
 <body>
 <body>
-    <header class="header-content"> 
-        <a href="index.html"><img src="grafiki/logomuzyczne.png" id="logo" alt="Logo"></a>
-        <span class="header-text">
-          <h1>Muzyczny Świat</h1>
-          <p>Twój sklep z instrumentami muzycznymi</p>
-        </span>
-      <button id="toggle-theme">🌙 Tryb nocny</button>
-    </header>
-    <nav>
-      <a href='koszyk.html'>Wróc do koszyka...</a>
-    </nav>
+  <header class="header-content"> 
+      <a href="index.html"><img src="grafiki/logomuzyczne.png" id="logo" alt="Logo"></a>
+      <span class="header-text">
+        <h1>Muzyczny Świat</h1>
+        <p>Twój sklep z instrumentami muzycznymi</p>
+      </span>
+    <button id="toggle-theme">🌙 Tryb nocny</button>
+  </header>
+  <nav>
+    <a href='koszyk.html'>Wróc do koszyka...</a>
+  </nav>
     
-    <section class="menuContainer twoColLayout">
-        <div class="leftCol">
-        <h1>Podsumowanie zamówienia</h1>
-        <form id="orderForm">   
-            <div class="formGrid">
-                <label>Imię: <input type="text" name="name" required></label><br>
-                <label>Nazwisko: <input type="text" name="surname" required></label><br>
-                <label>Email: <input type="email" name="email" required></label><br>
-                <label>Telefon: <input type="tel" name="phone" pattern="[0-9\-\+]{9,15}"></label><br>
-                <label>Adres: <input type="address" name="address" required></label><br>
-            </div>
-            <button type="submit" class="doKoszyka">Złóż zamówienie</button>
-        </form>
-        </div>
-        <div rightCol>
-            <h2>Twój koszyk</h2>
-            <ul id="simpleCartList"></ul>
-            <p class="suma">Suma: <span id="simpleTotal">0 zł</span></p>
+  <section class="menuContainer twoColLayout">
+    <div class="leftCol">
+      <h1>Podsumowanie zamówienia</h1>
+      <form id="orderForm">   
+          <div class="formGrid">
+              <label>Imię: <input type="text" name="name" required></label><br>
+              <label>Nazwisko: <input type="text" name="surname" required></label><br>
+              <label>Email: <input type="email" name="email" required></label><br>
+              <label>Telefon: <input type="tel" name="phone" pattern="[0-9\-\+]{9,15}"></label><br>
+              <label>Adres: <input type="address" name="address" required></label><br>
+          </div>
+          <button type="submit" class="doKoszyka">Złóż zamówienie</button>
+      </form>
+    </div>
+    <div rightCol>
+      <h2>Twój koszyk</h2>
+      <ul id="simpleCartList"></ul>
+      <p class="suma">Suma: <span id="simpleTotal">0 zł</span></p>
             
-        </div>
-    </section>
+    </div>
+  </section>
 
-    <footer>
-      <p>&copy; 2025 Muzyczny Świat. Wszelkie prawa zastrzeżone.</p>
-      <p>Email: kontakt@muzycznyswiat.pl</p>
-    </footer>
+<footer>
+    <p>&copy; 2025 Muzyczny Świat. Wszelkie prawa zastrzeżone.</p>
+  <p>Email: kontakt@muzycznyswiat.pl</p>
+</footer>
 
-    <script src="skrypty/pods.js"></script>
-    <script src="skrypty/scriptM.js"></script>
+<dialog id="confirmDialog">
+  <h2>Potwierdzenie zamówienia</h2>
+  <p id="dialogContent"></p>
+    <button id="cancelBtn">Anuluj</button>
+    <button id="confirmBtn">Potwierdź</button>
+</dialog>
+
+
+
+<script src="skrypty/pods.js"></script>
+<script src="skrypty/scriptM.js"></script>
+
 </body>
 </html>

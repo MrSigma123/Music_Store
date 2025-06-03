@@ -1,12 +1,16 @@
 /* skrypty uzywane w podsumowaniu, czyli formularz-zamularz oraz mini-lista zakupów */
 
 const form = document.getElementById("orderForm");
+const dialog = document.getElementById("confirmDialog");
+const confirmBtn = document.getElementById("confirmBtn");
+const cancelBtn = document.getElementById("cancelBtn");
 
-form.addEventListener('submit', async (e)=>{
+form.addEventListener('submit', async (e) => {
     e.preventDefault();
+    dialogContent.innerHTML = "";
 
     const cart = JSON.parse(sessionStorage.getItem("cart")) || [];
-    if(cart.length===0){
+    if (cart.length === 0) {
         alert("Twój koszyk jest pusty!");
         return;
     }
@@ -14,49 +18,76 @@ form.addEventListener('submit', async (e)=>{
     const formData = new FormData(form);
     const userData = Object.fromEntries(formData.entries());
 
-    let sum=0;
-    const items = cart.map(item=>{
-        const price = parseFloat(item.price.replace(",","."));
-        sum+=isNaN(price)? 0 : price;
-        return{ title: item.title, price: item.price};
+    let sum = 0;
+    const items = cart.map(item => {
+        const price = parseFloat(item.price.replace(",", "."));
+        sum += isNaN(price) ? 0 : price;
+        return { title: item.title, price: item.price };
     });
-    
-    const confirmMsg = `Czy twoje dane sa prawidłowe?\n\nImię i nazwisko: ${userData.name} ${userData.surname}\nEmail: ${userData.email}\nTelefon: ${userData.phone}\nAdres: ${userData.address}\n\nKwota: ${sum.toFixed(2)} zł`;
 
-    if(confirm(confirmMsg)) {
-        const orderData = {
-            client: userData,
-            items: items,
-            total: sum.toFixed(2)
-        };
+        const boldHeader = document.createElement("strong");
+        boldHeader.textContent = "Czy twoje dane są prawidłowe?";
+        const header = document.createElement("p");
+        header.appendChild(boldHeader);
+        dialogContent.appendChild(header);
 
-        try{
-            const res = await fetch("http://localhost:3000/orders", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify(orderData)
-            });
-            
-            if(res.ok){
-                const savedOrder = await res.json();
-                const orderId = savedOrder.id;
+        const dataP = document.createElement("p");
+        dataP.innerHTML = `
+        Imię i nazwisko: ${userData.name} ${userData.surname}<br>
+        Email: ${userData.email}<br>
+        Telefon: ${userData.phone}<br>
+        Adres: ${userData.address}`; 
+        dialogContent.appendChild(dataP);
+        
+    const showConfirmDialog = (message) => {
+        return new Promise((resolve) => {
+            dialog.showModal();
 
-                sessionStorage.setItem("lastOrderId", orderId); // zapisuje ID do sessionStorage
+            confirmBtn.onclick = () => {
+                dialog.close();
+                resolve(true);
+            };
 
-                alert("Zamówienie zostało złożone!");
-                window.location.href="dzieki.html";
-            } else {
-                alert("Wystąpił błąd przy składaniu zamówienia, upewnij się, że wszystkie podane dane są poprawne i spróbuj ponownie.");
-            }
-        } catch (err){
-            alert("Nie udało się połączyć z serwerem...");
-            console.error(err);
+            cancelBtn.onclick = () => {
+                dialog.close();
+                resolve(false);
+            };
+        });
+    };
+
+    const confirmed = await showConfirmDialog();
+    if (!confirmed) return;
+
+    const orderData = {
+        client: userData,
+        items: items,
+        total: sum.toFixed(2)
+    };
+
+    try {
+        const res = await fetch("http://localhost:3000/orders", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(orderData)
+        });
+
+        if (res.ok) {
+            const savedOrder = await res.json();
+            const orderId = savedOrder.id;
+            sessionStorage.setItem("lastOrderId", orderId);
+            alert("Zamówienie zostało złożone!");
+            window.location.href = "dzieki.html";
+        } else {
+            alert("Błąd serwera. Upewnij się, że wszystkie dane są poprawne.");
         }
-
+    } catch (err) {
+        console.error(err);
+        alert("Nie udało się połączyć z serwerem...");
     }
 });
+
 
 function renderSimpleCart() {
     const cart = JSON.parse(sessionStorage.getItem("cart")) || [];
