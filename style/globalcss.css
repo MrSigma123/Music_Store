@@ -306,10 +306,13 @@ body.dark .dropDownMenu {
   width: 120px;
   height: auto;
   transition: transform 1s ease-in;
-  margin-left: 2rem;
+  margin-right: 2rem;
+  border-radius: 0.5rem;
+  padding: 0.2rem 0.4rem;
 }
 
-#toggle-theme {
-  transform: rotate(1080deg);
+#toggle-theme:hover{
+  background-color: #cccccc;
   transition: transform 2s ease-in;
+  cursor: pointer;
 }
