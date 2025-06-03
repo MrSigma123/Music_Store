@@ -1,19 +1,43 @@
+const contactForm = document.getElementById("contactForm");
+const opinionForm = document.getElementById("opinionForm");
+
+ // formularz wiadomosci
+contactForm.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const formData = new FormData(contactForm);
+  const data = Object.fromEntries(formData.entries());
+
+  try {
+    const res = await fetch("http://localhost:3000/messages", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(data)
+    });
+
+    if (!res.ok) throw new Error(`Server error: ${res.status}`);
+    alert("Wiadomość wysłana.");
+    contactForm.reset();
+  } catch (err) {
+    console.error("Błąd przy wysyłaniu wiadomości:", err);
+    alert("Błąd przy wysyłaniu wiadomości.");
+  }
+});
+
+  // formularz opinie
 document.addEventListener("DOMContentLoaded", () => {
-  // formularz wiadomosci
-  const contactForm = document.querySelector("form:not(.form-popup form)");
-  contactForm.addEventListener("submit", async (e) => {
+  const opinionForm = document.querySelector(".form-popup form");
+
+  opinionForm.addEventListener("submit", async (e) => {
     e.preventDefault();
 
-    const data = {
-      imie: document.getElementById("imie").value,
-      nazwisko: document.getElementById("nazwisko").value,
-      email: document.getElementById("mail").value,
-      kraj: document.getElementById("kraj").value,
-      wiadomosc: document.getElementById("subject").value
-    };
+    const formData = new FormData(opinionForm);
+    const data = Object.fromEntries(formData.entries());
 
     try {
-      const res = await fetch("http://localhost:3000/messages", {
+      const res = await fetch("http://localhost:3000/opinions", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -22,38 +46,9 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       if (!res.ok) throw new Error(`Server error: ${res.status}`);
-      alert("Wiadomość wysłana.");
-      contactForm.reset();
-    } catch (err) {
-      console.error("Błąd przy wysyłaniu wiadomości:", err);
-      alert("Błąd przy wysyłaniu wiadomości.");
-    }
-  });
-
-  // formularz opinie
-  const opinionForm = document.querySelector(".form-popup form");
-  opinionForm.addEventListener("submit", async (e) => {
-    e.preventDefault();
-
-    const opinion = {
-      produkt: document.getElementById("pname").value,
-      ocena: document.getElementById("ocena").value,
-      wyjasnienie: opinionForm.querySelector("#subject").value
-    };
-
-    try {
-      const res = await fetch("http://localhost:3000/opinions", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(opinion)
-      });
-
-      if (!res.ok) throw new Error(`Server error: ${res.status}`);
       alert("Opinia wysłana.");
       opinionForm.reset();
-      closeForm();
+      closeForm(); 
     } catch (err) {
       console.error("Błąd przy wysyłaniu opinii:", err);
       alert("Błąd przy wysyłaniu opinii.");

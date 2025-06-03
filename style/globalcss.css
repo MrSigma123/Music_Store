@@ -299,3 +299,17 @@ body.dark .dropDownMenu {
   color: #e0e0e0;
   border-color: #444;
 }
+
+#toggle-theme {
+  position: absolute;
+  right: 20px;
+  width: 120px;
+  height: auto;
+  transition: transform 1s ease-in;
+  margin-left: 2rem;
+}
+
+#toggle-theme {
+  transform: rotate(1080deg);
+  transition: transform 2s ease-in;
+}

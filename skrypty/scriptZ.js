@@ -9,7 +9,7 @@ let allItems = [];
 let activeCategory = '';
 const koszykBtn = document.getElementById("koszyk");
 
-
+/* filtruje po klikach */
 categoryLinks.forEach(link => {
   link.addEventListener('click', e => {
     e.preventDefault();
@@ -19,13 +19,17 @@ categoryLinks.forEach(link => {
 });
 
 
+/* lapie kategorie z urla */
 function getQueryParam(param) {
   const urlParams = new URLSearchParams(window.location.search);
   return urlParams.get(param);
 }
 
+
 activeCategory = getQueryParam('kategoria') || '';
 
+
+/* update koszyka */
 function updateKoszykCount() {
   const cart = JSON.parse(sessionStorage.getItem('cart')) || [];
   koszykBtn.textContent = `Koszyk (${cart.length})`;

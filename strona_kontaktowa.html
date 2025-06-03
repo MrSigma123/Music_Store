@@ -6,12 +6,17 @@
     <link rel="stylesheet" href="style/StyleK.css">
     <link rel="stylesheet" href="style/globalcss.css" />
     <title>Strona Kontaktowa</title>
-    <script src="skrypty/scriptK.js"></script>
+
 </head>
 <body>
-    <header>
-        <h1>Muzyczny Świat</h1>
-        <p>Twój sklep z instrumentami muzycznymi</p>
+<body>
+    <header class="header-content"> 
+        <a href="index.html"><img src="grafiki/logomuzyczne.png" id="logo" alt="Logo"></a>
+        <span class="header-text">
+          <h1>Muzyczny Świat</h1>
+          <p>Twój sklep z instrumentami muzycznymi</p>
+        </span>
+      <button id="toggle-theme">🌙 Tryb nocny</button>
     </header>
 <nav>
   <a href="index.html">Strona główna</a>
@@ -30,7 +35,7 @@
   <a href="koszyk.html" id="koszyk">Koszyk (0)</a>
 </nav>
     <div class="container">
-        <form action="/action_page.php">
+        <form id="contactForm">
             <div class="row">
                 <div class="col-25">
                     <label for="imie">Imie</label>
@@ -52,7 +57,7 @@
                     <label for="email">email</label>
                 </div>
                 <div class="col-75">
-                    <input type="email" id="mail" name="mail" placeholder="wymagane.." required>
+                    <input type="email" id="mail" name="email" placeholder="wymagane.." required>
                 </div>
             </div>
             <div class="row">
@@ -60,7 +65,7 @@
                     <label for="panstwo">Kraj pochodzenia</label>
                 </div>
                 <div class="col-75">
-                    <select id="kraj" name="Kraj">
+                    <select id="kraj" name="kraj">
                         <option value="polska">Polska</option>
                         <option value="usa">USA</option>
                         <option value="uk">UK</option>
@@ -74,7 +79,7 @@
                     <label for="subject">Komunikat</label>
                 </div>
                 <div class="col-75">
-                    <textarea id="subject" name="subject" placeholder="Napisz coś, śmiało.." style="height:200px"></textarea>
+                    <textarea id="wiadomosc" name="wiadomosc" placeholder="Napisz coś, śmiało.." style="height:200px"></textarea>
                 </div>
             </div>
             <div class="row">
@@ -86,7 +91,7 @@
         Oceń produkt
     </button>
     <div class="form-popup" id="myForm">
-        <form action="/action_page.php">
+        <form id="opinionForm">
             <div class="row">
                 <div class="col-25">
                     <label for="produkt">Produkt</label>
@@ -100,7 +105,7 @@
                     <label for="country">Ocena</label>
                 </div>
                 <div class="col-75">
-                    <select id="ocena" name="Ocena">
+                    <select id="ocena" name="ocena">
                         <option value="beznadziejna">1</option>
                         <option value="slaba">2</option>
                         <option value="dostateczna">3</option>
@@ -111,10 +116,10 @@
             </div>
             <div class="row">
                 <div class="col-25">
-                    <label for="subject">Wyjasnienie</label>
+                    <label for="wyjasnienie">Wyjasnienie</label>
                 </div>
                 <div class="col-75">
-                    <textarea id="subject" name="subject" placeholder="Pomóż nam zrozumieć twoją opinię.." style="height:200px"></textarea>
+                    <textarea id="wyjasnienea" name="wyjasnienie" placeholder="Pomóż nam zrozumieć twoją opinię.." style="height:200px"></textarea>
                 </div>
             </div>
             <div class="row">
@@ -126,11 +131,11 @@
         </form>
     </div>
     <footer>
-        <button id="toggle-theme">🌙 Tryb nocny</button>
         <p>&copy; 2025 Muzyczny Świat. Wszelkie prawa zastrzeżone.</p>
         <p>Email: kontakt@muzycznyswiat.pl</p>
     </footer>
 
+    <script src="skrypty/scriptK.js"></script>
     <script src="skrypty/scriptM.js"></script>
     <script src="skrypty/scriptZ.js"></script>
 
